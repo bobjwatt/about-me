@@ -1,17 +1,12 @@
-var userName = prompt('Hi, thanks for visiting my page!! What is your name');
+var userName = prompt('Hi, thanks for visiting my page!! What is your name?');
 alert('Nice to meet you, ' + userName + '. I am going to ask some questions.');
-console.log('the user name is ' + userName + ' and he cool.');
+console.log('the user name is ' + userName + ' and he is the best potential boss ever!');
 
-var response1 = prompt('Do I have 3 cats?').toLowerCase();
+var response1 = prompt('Do you really plan to hire me? Be honest.').toLowerCase();
 var answer1 = 'yes';
 
-if (the user is correct); {
-  tell them they got it right
+if (response1 === answer1 || response1 === answer1[0]) {
+  alert('That is fantastic ' + userName + ', When do I start?');
 } else {
-  tell them they got it wrong
-}
-if (reponse1 === answer1 |\ response1 === answer1[0]{
-  alert('you are correct, ' + userName = '! My cats are Fluffy, Homey, and Buster');
-} else {
-  alert('Nope. I really do have 3 cats.');
+  alert('Well thanks for nothing' + userName + ', I really do have better things to do you know!');
 }
