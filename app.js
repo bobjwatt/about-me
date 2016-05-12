@@ -94,6 +94,33 @@ cars();
 //----------------
 // Sixth Question
 //----------------
+function game() {
+  alert('Let\'s play a game!');
+  var answer = 7;
+  var foundMatch = false;
+
+  for(var s = 0; s < 4; s++) {
+    var guessNumber = prompt('Can you guess what number I\'m thinking of.');
+    //add logic to cycle thru
+    if (guessNumber === answer) {
+      foundMatch = true;
+    }
+
+    if (foundMatch){
+      alert ('Congratulations');
+      tally++;
+      break;
+    }else {
+      alert ('try again');
+    }
+  }
+}
+game();
+
+//----------------
+// Sixth Question
+//----------------
+
 function state() {
   alert('Okay, now our 7th and final question. I\'ll give you 6 tries.');
   var answerState = ['California', 'Oregon'];
@@ -119,6 +146,7 @@ function state() {
   }
 }
 state();
+//game
 
 //----------------
 // Report tally to user
