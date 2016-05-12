@@ -1,7 +1,8 @@
 h1{
   font-family: courier;
   color: green;
-  text-decoration: underline;
+  border-bottom: 3px solid green;
+
 
 }
 h2{
