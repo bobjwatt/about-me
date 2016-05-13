@@ -24,10 +24,10 @@ kids();
 // Second Question
 //----------------
 function city() {
-  var response1 = prompt('Do I live in Seattle?').toLowerCase();
-  var answer1 = 'yes';
+  var response2 = prompt('Do I live in Seattle?').toLowerCase();
+  var answer2 = 'yes';
 
-  if (response1 === answer1 || response1 === answer1[0]) {
+  if (response2 === answer2 || response2 === answer2[0]) {
     alert('No ' + userName + ', afraid not.');
   } else {
     alert('That\'s right ' + userName + ', I live in T-Town!');
@@ -40,10 +40,10 @@ city();
 // Third Question
 //----------------
 function pets(){
-  var response1 = prompt('Do I have pets?').toLowerCase();
-  var answer1 = 'yes';
+  var response3 = prompt('Do I have pets?').toLowerCase();
+  var answer3 = 'yes';
 
-  if (response1 === answer1 || response1 === answer1[0]) {
+  if (response3 === answer3 || response3 === answer3[0]) {
     alert('I\'m sorry to inform you ' + userName + ', I do not.');
   } else {
     alert('That\'s right' + userName + ', no pets for us. My son is highly allergic.');
@@ -56,10 +56,10 @@ pets();
 // Fourth Question
 //----------------
 function job() {
-  var response1 = prompt('Do I really plan work here if I get hired?').toLowerCase();
-  var answer1 = 'yes';
+  var response4 = prompt('Do I really plan to work here if I get hired?').toLowerCase();
+  var answer4 = 'yes';
 
-  if (response1 === answer1 || response1 === answer1[0]) {
+  if (response4 === answer4 || response4 === answer4[0]) {
     alert('You got that right ' + userName + ', When do I start?');
   } else {
     alert('Well ' + userName + ', I really do have better things to do than waste our time!');
@@ -100,14 +100,14 @@ function game() {
   var foundMatch = false;
 
   for(var s = 0; s < 4; s++) {
-    var guessNumber = prompt('Can you guess what number I\'m thinking of.');
+    var guessNumber = parseInt(prompt('Can you guess what number I\'m thinking of.'));
     //add logic to cycle thru
     if (guessNumber === answer) {
       foundMatch = true;
     }
 
     if (foundMatch){
-      alert ('Congratulations');
+      alert ('Congratulations, you nailed it!');
       tally++;
       break;
     }else {
@@ -116,13 +116,11 @@ function game() {
   }
 }
 game();
-
 //----------------
 // Sixth Question
 //----------------
-
 function state() {
-  alert('Okay, now our 7th and final question. I\'ll give you 6 tries.');
+  alert('Okay, now our 7th and final question. I\'ll give you 6 tries to guess right.');
   var answerState = ['California', 'Oregon'];
   var foundMatch = false;
 
@@ -137,7 +135,7 @@ function state() {
     }
 
     if (foundMatch){
-      alert ('Congratulations');
+      alert ('Congratulations, you got it right!');
       tally++;
       break;
     }else {
@@ -146,9 +144,7 @@ function state() {
   }
 }
 state();
-//game
-
 //----------------
 // Report tally to user
 //----------------
-alert ('You got ' + tally + ' questions out of 7 questions.');
+alert ('You got ' + tally + ' questions out of 7 questions. Not too shabby ' + userName + ' thanks for playing.');
