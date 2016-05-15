@@ -2,10 +2,23 @@ h1{
   font-family: courier;
   color: green;
   border-bottom: 3px solid green;
-
-
 }
+.page {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  padding: inherit;
+}
+body{
+
+
+padding: 50px;
+width: 1200px;
+}
+
 h2{
   font-family: Arial;
   color: blue;
+  background-color: gray;
+  border: 1px solid black;
+  padding: 10px;
 }

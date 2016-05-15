@@ -101,7 +101,7 @@ function game() {
 
   for(var s = 0; s < 4; s++) {
     var guessNumber = parseInt(prompt('Can you guess what number I\'m thinking of.'));
-    //add logic to cycle thru
+
     if (guessNumber === answer) {
       foundMatch = true;
     }
@@ -117,7 +117,7 @@ function game() {
 }
 game();
 //----------------
-// Sixth Question
+// Seventh Question
 //----------------
 function state() {
   alert('Okay, now our 7th and final question. I\'ll give you 6 tries to guess right.');
